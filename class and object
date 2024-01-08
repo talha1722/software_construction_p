@@ -1,0 +1,57 @@
+
+package javaapplication11;
+
+    class Person{
+    // Fields or attributes
+    private String name;
+    private int age;
+
+    // Constructor
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+    
+    // Method to get the person's information
+    public void displayInfo() {
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+    }
+
+    // Getter method for the name
+    public String getName() {
+        return name;
+    }
+
+    // Getter method for the age
+    public int getAge() {
+        return age;
+    }
+
+    // Setter method for the name
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    // Setter method for the age
+    public void setAge(int age) {
+        this.age = age;
+    }
+     }
+
+public class JavaApplication11 {
+
+    public static void main(String[] args) {
+        
+        Person person1 = new Person("John Doe", 25);
+
+        person1.displayInfo();
+
+        person1.setName("Jane Doe");
+
+        person1.setAge(30);
+
+        person1.displayInfo();
+    }
+}
+        
